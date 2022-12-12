@@ -1,0 +1,72 @@
+<section class="vh-100" style="background-color: #d60935;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            
+              <div class="col-md-12  d-flex align-items-center">
+                <div class="card-body  text-black">
+  
+                  <form #requestLeaveForm="ngForm" (ngSubmit)="onEmp(requestLeaveForm.value)" >
+  
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                      <span class="h1 fw-bold mb-0">Leave Request</span>
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <input type="text" id="firstName" name="firstName" ngModel class="form-control form-control-s" placeholder="First Name"/>
+                      
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <input type="text" id="lastName"  name="lastName"  ngModel class="form-control form-control-s"  placeholder="Last Name"/>
+                      
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <label>Leave Start</label>
+                        <input type="date" id="leaveStart" name="leaveStart" ngModel class="form-control form-control-s" placeholder="Leave Start"/>
+                       
+                      </div>
+  
+                      <div class="form-outline mb-4">
+                        <label>Leave End</label>
+                          <input type="date" id="leaveEnd" name="leaveEnd" ngModel class="form-control form-control-s" placeholder="Leave End"/>
+                         
+                        </div>
+    
+  
+                    <div class="form-outline mb-4">
+                        <input type="text" id="leaveType" name="leaveType"  ngModel class="form-control form-control-s" placeholder="leave Type"/>
+                        
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                        <input type="text" id="leaveReason" name="leaveReason" ngModel class="form-control form-control-s" placeholder="leaveReason"/>
+                       
+                      </div>
+  
+                      <div class="form-outline mb-4">
+                        <input type="text" id="leaveDays" name="leaveDays" ngModel class="form-control form-control-s" placeholder="leave Days"/>
+                       
+                      </div>
+  
+                    
+                    <div class="pt-1 mb-4">
+                      <input class="btn btn-dark btn-s btn-block" type="submit" value="submit" />
+                    </div>
+                    
+                  </form>
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-s btn-block" type="button"> <a routerLink="/leaveinfo">Leave Info</a></button> 
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
